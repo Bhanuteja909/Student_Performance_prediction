@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Performance Predictor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="main">
+    <h1>Student Performance Predictor</h1>
+    <form id="predict-form">
+      <label>Gender:
+        <select name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </label><br>
+  
+      <label>Race/Ethnicity:
+        <select name="race_ethnicity">
+          <option value="group A">Group A</option>
+          <option value="group B">Group B</option>
+          <option value="group C">Group C</option>
+          <option value="group D">Group D</option>
+          <option value="group E">Group E</option>
+        </select>
+      </label><br>
+  
+      <label>Parental Level of Education:
+        <select name="parental_level_of_education">
+          <option value="high school">High School</option>
+          <option value=" some college"> some college</option>
+          <option value="some high school">Some High School</option>
+          <option value="associate's degree">Associate's Degree</option>
+          <option value="bachelor's degree">Bachelor's Degree</option>
+          <option value="master's degree">Master's Degree</option>
+        </select>
+      </label><br>
+  
+      <label>Lunch:
+        <select name="lunch">
+          <option value="standard">Standard</option>
+          <option value="free/reduced">Free/Reduced</option>
+        </select>
+      </label><br>
+  
+      <label>Test Preparation Course:
+        <select name="test_preparation_course">
+          <option value="none">None</option>
+          <option value="completed">Completed</option>
+        </select>
+      </label><br>
+  
+      <label>Reading Score:
+        <input type="number" name="reading_score" required>
+      </label><br>
+  
+      <label>Writing Score:
+        <input type="number" name="writing_score" required>
+      </label><br><br>
+  
+      <button type="submit">Predict</button>
+    </form>
+  
+    <h2 id="result"></h2>
+  
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
